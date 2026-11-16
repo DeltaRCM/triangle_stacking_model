@@ -3,10 +3,25 @@
 A 2D model for simulating compensational and random stacking of triangular
 channel deposits.
 
+The model is an implementation of an object-based staxking model described in Wang et al., 2011:
+
+> We model basin filling with discrete triangular elements that are meant to represent channel or lobe deposits. During each time step one element is deposited in the basin while the subsidence is set to balance mean basin aggradation. An approximation of the avulsion process is modeled by placing channel elements with the following rules. At every nth time step during basin filling, the active channel relocates to the absolute topographic low in the model domain. For all other time steps deposition follows a random walk with elements moving one channel width left or right of the previous element.
+
+**Key references:**
+
+- Straub, K. M., Paola, C., Mohrig, D., Wolinsky, M. A., & George, T. (2009).
+  Compensational stacking of channelized sedimentary deposits.
+  *Journal of Sedimentary Research*, 79(9), 673–688.
+  <https://doi.org/10.2110/jsr.2009.070>
+- Wang, Y., Straub, K. M., & Hajek, E. A. (2011). Scale-dependent compensational
+  stacking: An estimate of autogenic time scales in channelized sedimentary
+  deposits. *Geology*, 39(9), 811–814.
+  <https://doi.org/10.1130/G32068.1>
+
+
 ## Requirements
 
-Python 3 with NumPy and Matplotlib. The `sandplover` conda environment can be
-used if it has these packages installed.
+Python 3 with NumPy and Matplotlib. 
 
 ## Run the simulations
 
